@@ -1,0 +1,21 @@
+// criação de uma lista
+list = []
+
+//criei um loop para ir colocando os itens da lista
+while True:
+    //input para colocar os números
+    num = int(input('Digite um valor:'))
+    //condição caso o input for diferente de '0' 
+    if num != 0:
+        list.append(num)  //colocando/adcionando os itens nos espaços livres da lista
+        print(list)  //printando a lista
+        print('Soma dos itens da lista:', sum(list))  //printando a soma da lista
+    //condição caso o input for '0' 
+    if num == 0:
+        list.pop()  //apagando itens anteriores
+        print(list) //printando a lista
+        print('Soma dos itens da lista:', sum(list)) //printando a soma da lista com .pop()
+    //condição caso a soma for igual a '0'
+    if sum(list) == 0:
+        print('Error/Encerrado')  //printando o encerramento
+        break //encerrando o loop
